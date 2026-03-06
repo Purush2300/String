@@ -1,11 +1,22 @@
 public class Reverse {
-    public static void main(String[] args) {
-        String name="JAVA";
-        String a="";
-        for (int i = name.length()-1; i >=0; i--) {
-            a=a+name.charAt(i);
+    static String reverse(String s){
+          String a="";
+        for (int i = s.length()-1; i >=0; i--) {
+            a=a+s.charAt(i);
           
         }
-          System.out.println(a);
+        return a;
+    }
+
+    static boolean palindrom(String q){
+        if(q.equals(reverse(q))){
+            return true;
+        }
+        return false;
+    }
+    public static void main(String[] args) {
+        String name="malayala";
+    
+      System.out.println(palindrom(name));    
     }
 }
