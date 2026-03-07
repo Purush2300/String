@@ -1,6 +1,6 @@
 public class Another {
     public static void main(String[] args) {
-        String a="aaca";
+        String a="bcd";
         int n=10;
         int count=0;
         for (int i = 0; i <a.length(); i++) {
