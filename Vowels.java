@@ -10,7 +10,7 @@ public class Vowels {
                
             }
           else{
-              t=t+a.charAt(i);
+              t=t+c;
           }
         }
 
