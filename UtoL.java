@@ -8,14 +8,17 @@ public class UtoL {
                 t=t+(char) (c-32);
                 
             }
-            else {
+            else if(c>='A'&&c<='z'){
                 t=t+(char)(c+32);
+            }
+            else{
+                t=t+c;
             }
         }
         System.out.println(t);
     }
     public static void main(String[] args) {
-        String a="Hello";
+        String a="Hello@123#";
         utol(a);
     }
 }
