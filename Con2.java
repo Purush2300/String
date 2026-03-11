@@ -1,6 +1,9 @@
 public class Con2 {
-    static int Consonents(String a){
-        int q=0;
+    static void Consonents(String a){
+        int v=0;
+        int cc=0;
+        int s=0;
+        int n=0;
         for (int i = 0; i <a.length(); i++) {
             char c=a.charAt(i);
             if((c>='a' && c<='z') ||(c>='A' && c<='Z'))
@@ -8,18 +11,31 @@ public class Con2 {
                 if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'||
                 c=='A'||c=='E'||c=='I'||c=='O'||c=='U'){
 
-              q++;
+             v++;
             }
              else{
-              
+              cc++;
             }
         }
+       else if(c=='0'||c=='1'||c=='2'||c=='3'||c=='4'||c=='5'||c=='6'||c=='7'||c=='8'||c=='9'){
+            n++;
+        }
+        else{
+            s++;
+        }
+        // if(!((c>='a' && c<='z') ||(c>='A' && c<='Z')   ||(c=='0'||c=='1'||c=='2'||c=='3'||c=='4'||c=='5'||c=='6'||c=='7'||c=='8'||c=='9')   )){
+        //     s++;
+        // }
            
         }
-        return q;
+        System.out.println(v+" vowels");
+        System.out.println(cc+" consonents");
+        System.out.println(n+" numeric");
+        System.out.println(s+" specialcharacte");
+       
     }
     public static void main(String[] args) {
-        String a="theOne@123";
-        System.out.println(Consonents(a));
+        String a="India@23";
+        Consonents(a);
     }
 }
