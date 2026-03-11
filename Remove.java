@@ -17,7 +17,9 @@ public class Remove {
             }
         }
         for (int i = si; i <=ei; i++) {
-            t=t+a.charAt(i);
+            if(a.charAt(i)!=' ' ||(a.charAt(i)==' ' &&a.charAt(i+1)!=' ')){
+                t=t+a.charAt(i);
+            }
         }
         System.out.println(t);
     }
