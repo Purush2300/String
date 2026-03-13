@@ -1,5 +1,6 @@
 public class Sub2 {
     static void check(String a,String b){
+        int count=0;
        int  c = b.length();
         for (int i = 0; i <=a.length()-c; i++) {
             String t="";
@@ -7,7 +8,7 @@ public class Sub2 {
                 t=t+a.charAt(j);
             }
             if(b.equals(t)){
-                System.out.println("true");
+                System.out.println(count++);
                 return;
             }
             
