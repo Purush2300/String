@@ -9,16 +9,16 @@ public class Sub2 {
                 t=t+a.charAt(j);
             }
             if(b.equals(t)){
-                // count++;
-                // System.out.println(count);
+                count++;
+              
                
                 // return;
-                System.out.println("true");
-                return;
+                // System.out.println("true");
+                // return;
             }
             
     }
-     System.out.println("false");
+       System.out.println(count);
 }
     public static void main(String[] args) {
         String a="mississippi";
