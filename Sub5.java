@@ -8,6 +8,13 @@ public class Sub5 {
         }
         return a.charAt(0)==' '?c:c+1;
     }
+    static String reverse(String s){
+        String t="";
+        for (int i = 0; i <s.length(); i++) {
+            t=s.charAt(i)+t;
+        }
+        return t;
+    }
     static String [] space(String a){
         int w=count(a);
        String[] ar=new String[w];
@@ -31,6 +38,11 @@ public class Sub5 {
         String [] z=space(s);
         for (int i = 0; i < z.length; i++) {
             System.out.println(z[i]);
+        }
+        System.out.println();
+
+         for (int i = 0; i < z.length; i++) {
+            System.out.println(reverse(z[i]));
         }
     }
 }
