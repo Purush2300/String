@@ -16,8 +16,8 @@ public class LongestPalindrom {
     }
 
     public static void main(String[] args) {
-        String a = "leetcode";
-        String b = "leet";
+        String a = "school";
+        String b = "fizz";
         System.out.println(first(a, b));
     }
 }
